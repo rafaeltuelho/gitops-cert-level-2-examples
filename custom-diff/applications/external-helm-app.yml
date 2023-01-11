@@ -22,11 +22,10 @@ spec:
     syncOptions:
       - CreateNamespace=true
   ignoreDifferences:
-  - group: "*"
-    kind: "*"
+  - group: "apps"
+    kind: "Deployment"
     jsonPointers:
     - /metadata/annotations/creation
-    - /data/my-password
   - group: "apps"
     kind: "Secret"
     jqPathExpressions:
