@@ -30,3 +30,7 @@ spec:
     kind: "Secret"
     jqPathExpressions:
       - '.data.my-password'
+  - group: "*"
+    kind: "*"
+    managedFieldsManagers:
+    - kube-controller-manager
