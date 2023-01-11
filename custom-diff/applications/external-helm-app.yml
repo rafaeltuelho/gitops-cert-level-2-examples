@@ -28,8 +28,8 @@ spec:
     - /metadata/annotations/creation
   - group: "apps"
     kind: "Secret"
-    jqPathExpressions:
-      - '.data.my-password'
+    jsonPointers:
+    - /data
   - group: "*"
     kind: "*"
     managedFieldsManagers:
